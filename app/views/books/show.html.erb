@@ -1,0 +1,13 @@
+<%= flash[:success] %>
+<p>
+  <strong>title:</strong>
+  <%= @book.title %>
+  </p>
+<p>
+  <strong>body:</strong>
+  <%= @book.body %>
+  </p>
+
+   <div><%= link_to 'Edit', edit_book_path(@book) %><span> | </span><%= link_to 'back', books_path %></div>
+
+
